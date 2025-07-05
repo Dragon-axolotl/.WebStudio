@@ -2,61 +2,131 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Веб Студія</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebStudio</title>
+  <link href="./styles.css" rel="stylesheet">
+  
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">Web<span class="logo-accent">Studio</span></a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">Студія</a></li>
+          <li><a href="#portfolio">Портфоліо</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="contact-list">
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
+    </div>
+  </header>
 
   <!-- Hero -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Ми створюємо сайти<br>які працюють на результат</h1>
-    <p class="text-lg md:text-xl mb-6 max-w-xl">Дизайн, розробка, SEO — усе в одному місці.</p>
-    <a href="#contacts" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Замовити сайт</a>
-  </section>
-
-  <!-- Services -->
-  <section class="py-16 px-6 bg-gray-100">
-    <h2 class="text-3xl font-semibold text-center mb-10">Наші послуги</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-bold mb-2">Веб-дизайн</h3>
-        <p>Розробка UI/UX у Figma з фокусом на результат.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-bold mb-2">Розробка</h3>
-        <p>Створення сайтів під ключ — швидко, адаптивно, безпечно.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-bold mb-2">SEO та маркетинг</h3>
-        <p>Просування сайту в пошукових системах для залучення клієнтів.</p>
-      </div>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+      <button class="hero-button">Замовити послугу</button>
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section class="py-16 px-6">
-    <h2 class="text-3xl font-semibold text-center mb-10">Портфоліо</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <img src="https://via.placeholder.com/400x300" alt="Проєкт 1" class="rounded-xl shadow" />
-      <img src="https://via.placeholder.com/400x300" alt="Проєкт 2" class="rounded-xl shadow" />
-      <img src="https://via.placeholder.com/400x300" alt="Проєкт 3" class="rounded-xl shadow" />
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <ul class="features-list">
+        <li>
+          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p>Ідейні міркування, і навіть початок повсякденної роботи...</p>
+        </li>
+        <li>
+          <h3>ПУНКТУАЛЬНІСТЬ</h3>
+          <p>Завдання організації, особливо ж рамки і місце навчання...</p>
+        </li>
+        <li>
+          <h3>ПЛАНУВАННЯ</h3>
+          <p>Так само консультація з широким активом значною мірою зумовлює...</p>
+        </li>
+        <li>
+          <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань...</p>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Contacts -->
-  <section id="contacts" class="py-16 px-6 bg-gray-100">
-    <h2 class="text-3xl font-semibold text-center mb-6">Зв’яжіться з нами</h2>
-    <form class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Ім'я" class="w-full p-3 rounded-lg border border-gray-300" />
-      <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300" />
-      <textarea placeholder="Ваше повідомлення" class="w-full p-3 rounded-lg border border-gray-300" rows="5"></textarea>
-      <button type="submit" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Надіслати</button>
-    </form>
+  <!-- What We Do -->
+  <section class="work" id="services">
+    <div class="container">
+      <h2 class="section-title">Чим ми займаємось</h2>
+      <ul class="work-list">
+        <li><img src="https://via.placeholder.com/370x294" alt="Десктопні додатки"></li>
+        <li><img src="https://via.placeholder.com/370x294" alt="Мобільні додатки"></li>
+        <li><img src="https://via.placeholder.com/370x294" alt="Дизайнерські рішення"></li>
+      </ul>
+    </div>
   </section>
 
-  <footer class="text-center py-6 text-sm text-gray-500">
-    &copy; 2025 Веб Студія. Усі права захищені.
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="container">
+      <h2 class="section-title">Наша команда</h2>
+      <ul class="team-list">
+        <li class="team-item">
+          <img src="https://via.placeholder.com/270x260" alt="Ігор Дем'яненко" />
+          <h3>Ігор Дем'яненко</h3>
+          <p>Product Designer</p>
+        </li>
+        <li class="team-item">
+          <img src="https://via.placeholder.com/270x260" alt="Ольга Рєпіна" />
+          <h3>Ольга Рєпіна</h3>
+          <p>Frontend Developer</p>
+        </li>
+        <li class="team-item">
+          <img src="https://via.placeholder.com/270x260" alt="Микола Тарасов" />
+          <h3>Микола Тарасов</h3>
+          <p>Marketing</p>
+        </li>
+        <li class="team-item">
+          <img src="https://via.placeholder.com/270x260" alt="Михайло Єрмаков" />
+          <h3>Михайло Єрмаков</h3>
+          <p>UI Designer</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <h2 class="section-title">Постійні клієнти</h2>
+      <ul class="clients-list">
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 1"></li>
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 2"></li>
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 3"></li>
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 4"></li>
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 5"></li>
+        <li><img src="https://via.placeholder.com/170x81" alt="Клієнт 6"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="logo">Web<span class="logo-accent">Studio</span></a>
+      <address class="footer-address">
+        м. Київ, пр-т Лесі Українки, 26
+        <div class="footer-contact">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
+      </address>
+    </div>
   </footer>
 
 </body>
