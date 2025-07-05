@@ -3,118 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <title>Веб Студія</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Хедер -->
-  <header>
-    <div>
-      <a href="#">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="#about">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="./contacs.html">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
-  </header>
-<!--main-->
-  <main>
-    <section class="portfolio">
-      <div class="container">
-        <ul class="filters">
-          <li><button class="active">Усі</button></li>
-          <li><button>Веб-сайти</button></li>
-          <li><button>Додатки</button></li>
-          <li><button>Дизайн</button></li>
-          <li><button>Маркетинг</button></li>
-        </ul>
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Ми створюємо сайти<br>які працюють на результат</h1>
+    <p class="text-lg md:text-xl mb-6 max-w-xl">Дизайн, розробка, SEO — усе в одному місці.</p>
+    <a href="#contacts" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Замовити сайт</a>
+  </section>
 
-        <ul class="grid">
-          <li class="card">
-            <img src="images/techno.jpg" alt="Технокряк" />
-            <div class="info">
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/poster.jpg" alt="Постер New Orlean" />
-            <div class="info">
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/restaurant.jpg" alt="Ресторан Seafood" />
-            <div class="info">
-              <h3>Ресторан Seafood</h3>
-              <p>Додаток</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/headphones.jpg" alt="Проєкт Prime" />
-            <div class="info">
-              <h3>Проєкт Prime</h3>
-              <p>Маркетинг</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/boxes.jpg" alt="Проєкт Boxes" />
-            <div class="info">
-              <h3>Проєкт Boxes</h3>
-              <p>Додаток</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/inspiration.jpg" alt="Inspiration has no Borders" />
-            <div class="info">
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/limited.jpg" alt="Видання Limited Edition" />
-            <div class="info">
-              <h3>Видання Limited Edition</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/lab.jpg" alt="Проєкт LAB" />
-            <div class="info">
-              <h3>Проєкт LAB</h3>
-              <p>Маркетинг</p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/growing.jpg" alt="Growing Business" />
-            <div class="info">
-              <h3>Growing Business</h3>
-              <p>Дизайн</p>
-            </div>
-          </li>
-        </ul>
+  <!-- Services -->
+  <section class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-10">Наші послуги</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">Веб-дизайн</h3>
+        <p>Розробка UI/UX у Figma з фокусом на результат.</p>
       </div>
-    </section>
-  </main>
-<!--footer-->
-  <footer class="footer">
-    <div class="container">
-      <a class="logo"><span>Web</span>Studio</a>
-      <address>
-        м. Київ, пр-т Лесі Українки, 26<br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">Розробка</h3>
+        <p>Створення сайтів під ключ — швидко, адаптивно, безпечно.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">SEO та маркетинг</h3>
+        <p>Просування сайту в пошукових системах для залучення клієнтів.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-10">Портфоліо</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://via.placeholder.com/400x300" alt="Проєкт 1" class="rounded-xl shadow" />
+      <img src="https://via.placeholder.com/400x300" alt="Проєкт 2" class="rounded-xl shadow" />
+      <img src="https://via.placeholder.com/400x300" alt="Проєкт 3" class="rounded-xl shadow" />
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts" class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-6">Зв’яжіться з нами</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Ім'я" class="w-full p-3 rounded-lg border border-gray-300" />
+      <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300" />
+      <textarea placeholder="Ваше повідомлення" class="w-full p-3 rounded-lg border border-gray-300" rows="5"></textarea>
+      <button type="submit" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Надіслати</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    &copy; 2025 Веб Студія. Усі права захищені.
   </footer>
+
 </body>
 </html>
