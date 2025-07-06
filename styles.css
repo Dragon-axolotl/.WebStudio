@@ -38,13 +38,14 @@
     }
 
     .logo {
+      font-family: 'Raleway', sans-serif;
       font-weight: 700;
       font-size: 24px;
-      color: #000;
+      color: #2196f3;
     }
 
     .logo-accent {
-      color: #2196f3;
+      color: #000;
     }
 
     .nav-list {
