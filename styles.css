@@ -151,7 +151,12 @@
       background-color: #f5f4fa;
       padding: 94px 0;
     }
-
+    .team-item {
+      img {
+        height: 260px;
+        width: 270px;
+      }
+    }
     .team-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
