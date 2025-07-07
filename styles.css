@@ -3,7 +3,10 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+    li>img {
+      height: 370px;
+      width: 294px;
+    }
     body {
       font-family: 'Roboto', sans-serif;
       color: #212121;
@@ -193,11 +196,13 @@
     }
 
     .footer .logo {
-      color: #fff;
+      color: #2196f3;
       margin-bottom: 20px;
       display: inline-block;
     }
-
+     .footer .logo-accent {
+      color: #fff;
+    }
     .footer-address {
       font-size: 14px;
       color: #ffffff;
