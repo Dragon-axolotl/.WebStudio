@@ -7,6 +7,19 @@
       height: 370px;
       width: 294px;
     }
+    .team-item {
+      img {
+        height: 260px;
+        width: 270px;
+      }
+      .card {
+        img {
+          height: 294px;
+          width: 370px;
+          object-fit: cover;
+        }
+      }
+    }
     body {
       font-family: 'Roboto', sans-serif;
       color: #212121;
@@ -151,12 +164,7 @@
       background-color: #f5f4fa;
       padding: 94px 0;
     }
-    .team-item {
-      img {
-        height: 260px;
-        width: 270px;
-      }
-    }
+
     .team-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -174,6 +182,25 @@
       font-size: 14px;
       color: #757575;
     }
+
+    /* Clients */
+    .clients {
+      padding: 94px 0;
+    }
+
+    .clients-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .clients-list img {
+      max-width: 100%;
+      height: auto;
+    }
+
     /* Footer */
     .footer {
       background-color: #2f303a;
@@ -186,9 +213,10 @@
       margin-bottom: 20px;
       display: inline-block;
     }
-     .footer .logo-accent {
+    .footer .logo-accent {
       color: #fff;
     }
+    
     .footer-address {
       font-size: 14px;
       color: #ffffff;
