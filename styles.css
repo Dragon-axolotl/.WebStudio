@@ -1,13 +1,96 @@
+
 :root {
      margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    li>img {
-      height: 370px;
-      width: 294px;
-    }
-    .team-item {
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Сетка карточек */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
+  gap: 30px;
+  justify-items: center; /* Центрируем карточки внутри ячеек */
+  padding: 30px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Карточка */
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* Ограничение ширины карточки */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Картинка */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Текст под фото */
+.card .info {
+  padding: 15px;
+}
+
+.card .info h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.card .info p {
+  color: #777;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Кнопки фильтров */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.filters button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filters .active {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+li>img {
+  height: 370px;
+  width: 294px;
+}
+
+.team-item {
       img {
         height: 260px;
         width: 270px;
