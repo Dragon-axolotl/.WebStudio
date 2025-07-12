@@ -266,24 +266,6 @@ li>img {
       color: #757575;
     }
 
-    /* Clients */
-    .clients {
-      padding: 94px 0;
-    }
-
-    .clients-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 30px;
-      align-items: center;
-      justify-items: center;
-    }
-
-    .clients-list img {
-      max-width: 100%;
-      height: auto;
-    }
-
     /* Footer */
     .footer {
       background-color: #2f303a;
@@ -311,4 +293,4 @@ li>img {
       color: #757575;
       font-size: 14px;
       margin-top: 5px;
-    } 
+    }
