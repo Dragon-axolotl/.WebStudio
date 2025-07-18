@@ -1,36 +1,251 @@
-
+/* === Базові стилі та скидання === */
 :root {
-     margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Основне оформлення сторінки === */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* === Скидання посилань та списків === */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === Контейнер для обмеження ширини === */
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Сетка карточек */
+/* === Хедер === */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* === Логотип === */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2196f3;
+  line-height: 1.2;
+}
+
+.logo-accent {
+  color: #000;
+}
+
+/* === Навігація === */
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  font-weight: 500;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* === Контакти в хедері === */
+.contact-list {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.contact-list a {
+  color: #757575;
+  line-height: 1.5;
+}
+
+/* === Головний блок Hero === */
+.hero {
+  background-color: #2f303a;
+  color: #fff;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.4;
+}
+
+.hero-button {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+/* === Секція "Особливості" === */
+.features {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.features-list h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #212121;
+  line-height: 1.2;
+}
+
+.features-list p {
+  font-size: 14px;
+  color: #757575;
+  line-height: 1.7;
+}
+
+/* === Заголовки секцій === */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+/* === Секція "Чим ми займаємося" === */
+.work {
+  padding: 94px 0;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.work-list img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* === Команда === */
+.team {
+  background-color: #f5f4fa;
+  padding: 94px 0;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.team-item h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.team-item p {
+  font-size: 14px;
+  color: #757575;
+  line-height: 1.5;
+}
+
+.team-item img {
+  height: 260px;
+  width: 270px;
+}
+
+/* === Зображення в картках команди === */
+.card img {
+  height: 294px;
+  width: 370px;
+  object-fit: cover;
+}
+
+/* === Футер === */
+.footer {
+  background-color: #2f303a;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.footer .logo {
+  color: #2196f3;
+  margin-bottom: 20px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.footer .logo-accent {
+  color: #fff;
+}
+
+.footer-address {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+.footer-contact a {
+  display: block;
+  color: #757575;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* === Сітка / Картки === */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  justify-items: center; /* Центрируем карточки внутри ячеек */
+  justify-items: center;
   padding: 30px 0;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
-/* Карточка */
 .card {
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   width: 100%;
-  max-width: 350px; /* Ограничение ширины карточки */
+  max-width: 350px;
   transition: transform 0.2s;
 }
 
@@ -38,14 +253,12 @@
   transform: translateY(-5px);
 }
 
-/* Картинка */
 .card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Текст под фото */
 .card .info {
   padding: 15px;
 }
@@ -53,15 +266,17 @@
 .card .info h3 {
   font-size: 20px;
   margin: 10px 0 5px;
+  line-height: 1.2;
 }
 
 .card .info p {
   color: #777;
   font-size: 16px;
   margin: 0;
+  line-height: 1.5;
 }
 
-/* Кнопки фильтров */
+/* === Фільтри на сторінці Портфоліо === */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -76,6 +291,7 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  line-height: 1.5;
 }
 
 .filters .active {
@@ -85,212 +301,8 @@
   border-radius: 4px;
 }
 
-li>img {
+/* === Розміри зображень у списках === */
+li > img {
   height: 370px;
   width: 294px;
 }
-
-.team-item {
-      img {
-        height: 260px;
-        width: 270px;
-      }
-      .card {
-        img {
-          height: 294px;
-          width: 370px;
-          object-fit: cover;
-        }
-      }
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      color: #212121;
-      background-color: #ffffff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 15px;
-    }
-
-    /* Header */
-    .header {
-      padding: 24px 0;
-      border-bottom: 1px solid #ececec;
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      color: #2196f3;
-    }
-
-    .logo-accent {
-      color: #000;
-    }
-
-    .nav-list {
-      display: flex;
-      gap: 30px;
-    }
-
-    .nav-list a {
-      font-weight: 500;
-      color: #212121;
-    }
-
-    .contact-list {
-      display: flex;
-      gap: 20px;
-      font-size: 14px;
-    }
-
-    .contact-list a {
-      color: #757575;
-    }
-
-    /* Hero */
-    .hero {
-      background-color: #2f303a;
-      color: #fff;
-      text-align: center;
-      padding: 120px 0;
-    }
-
-    .hero-title {
-      font-size: 44px;
-      font-weight: 900;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      line-height: 1.4;
-    }
-
-    .hero-button {
-      background-color: #2196f3;
-      color: #fff;
-      padding: 15px 32px;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    /* Features */
-    .features {
-      padding: 94px 0;
-    }
-
-    .features-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .features-list h3 {
-      margin-bottom: 10px;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #212121;
-    }
-
-    .features-list p {
-      font-size: 14px;
-      color: #757575;
-      line-height: 1.7;
-    }
-
-    /* Section title */
-    .section-title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 50px;
-    }
-
-    /* Work */
-    .work {
-      padding: 94px 0;
-    }
-
-    .work-list {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-    }
-
-    .work-list img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 4px;
-    }
-
-    /* Team */
-    .team {
-      background-color: #f5f4fa;
-      padding: 94px 0;
-    }
-
-    .team-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
-
-    .team-item h3 {
-      margin-top: 20px;
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    .team-item p {
-      font-size: 14px;
-      color: #757575;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: #2f303a;
-      color: #fff;
-      padding: 60px 0;
-    }
-
-    .footer .logo {
-      color: #2196f3;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-    .footer .logo-accent {
-      color: #fff;
-    }
-    
-    .footer-address {
-      font-size: 14px;
-      color: #ffffff;
-      line-height: 1.7;
-    }
-
-    .footer-contact a {
-      display: block;
-      color: #757575;
-      font-size: 14px;
-      margin-top: 5px;
-    }
