@@ -199,7 +199,6 @@ ul {
 .card img {
   height: 294px;
   width: 370px;
-  /* object-fit: cover; */ /* Ще не вивчали */
 }
 
 /* === Футер === */
@@ -247,17 +246,11 @@ ul {
 
 .card {
   background-color: var(--white);
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */ /* Ще не вивчали */
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   width: 100%;
   max-width: 350px;
-  /* transition: transform 0.2s; */ /* Ще не вивчали */
-}
-
-.card:hover {
-  /* transform: translateY(-5px); */ /* Ще не вивчали */
 }
 
 .card img {
@@ -312,4 +305,18 @@ ul {
 li > img {
   height: 370px;
   width: 294px;
+}
+
+.grid > img {
+  height: 294px;
+  width: 370px;
+}
+
+/* === Відступи для секцій  === */
+.hero,
+.features,
+.work,
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
