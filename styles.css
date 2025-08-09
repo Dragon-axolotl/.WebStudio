@@ -390,4 +390,92 @@ li > img {
   }
 }
 
+/* Контейнер фільтрів */
+.filters {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
 
+/* Кнопки фільтрів */
+.filters button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background-color: #2196f3;
+  color: white;
+  border-color: #2196f3;
+}
+
+/* Контейнер карток */
+.grid {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  gap: 30px;             
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* Картка */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 300px;       
+  max-width: 350px;      
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.card .info {
+  padding: 15px;
+}
+
+.card .info h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  line-height: 1.2;
+}
+
+.card .info p {
+  color: #777;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .filters {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
