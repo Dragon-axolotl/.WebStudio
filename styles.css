@@ -479,3 +479,40 @@ li > img {
     max-width: 100%;
   }
 }
+
+/* === Іконки в секції "Чому ми" через ::before === */
+.features-list-item {
+  position: relative;
+  padding-top: 140px;
+  text-align: center;
+}
+
+.features-list-img {
+  display: none; /* ховаємо <img>, але воно лишається в HTML */
+}
+
+.features-list-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.features-list-item:nth-child(1)::before {
+  background-image: url("./img/Group 1.png");
+}
+.features-list-item:nth-child(2)::before {
+  background-image: url("./img/Group 2.png");
+}
+.features-list-item:nth-child(3)::before {
+  background-image: url("./img/Group 3.png");
+}
+.features-list-item:nth-child(4)::before {
+  background-image: url("./img/Group 4.png");
+}
