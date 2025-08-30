@@ -86,7 +86,9 @@ ul {
 
 /* === Hero === */
 .hero {
-  background-color: var(--dark-bg);
+  background-image: url(./img/Img.png);
+  background-size: cover;
+  background-position: center;
   color: var(--white);
   text-align: center;
   padding: 120px 0;
@@ -517,5 +519,6 @@ li > img {
 .features-list-item:nth-child(4)::before {
   background-image: url("./img/Group 4.png");
 }
+
 
 
