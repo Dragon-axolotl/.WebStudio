@@ -112,6 +112,11 @@ ul {
 }
 
 /* === Особливості === */
+.features-list-img {
+  width: 270px;
+  height: 120px;
+}
+
 .features {
   padding: 94px 0;
 }
@@ -512,4 +517,5 @@ li > img {
 .features-list-item:nth-child(4)::before {
   background-image: url("./img/Group 4.png");
 }
+
 
