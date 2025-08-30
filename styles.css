@@ -487,10 +487,6 @@ li > img {
   text-align: center;
 }
 
-.features-list-img {
-  display: none; /* ховаємо <img>, але воно лишається в HTML */
-}
-
 .features-list-item::before {
   content: "";
   position: absolute;
@@ -516,3 +512,4 @@ li > img {
 .features-list-item:nth-child(4)::before {
   background-image: url("./img/Group 4.png");
 }
+
