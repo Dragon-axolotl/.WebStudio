@@ -86,7 +86,7 @@ ul {
 
 /* === Hero === */
 .hero {
-  background-image: url(./Img.png);
+  background-image: url(./img/Img.png);
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -119,20 +119,21 @@ ul {
   height: 120px;
 }
 
-.features {
-  padding: 94px 0;
-}
-
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .features-list > li {
-  flex: 1 1 250px;
-  min-width: 250px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
 }
 
 .features-list h3 {
@@ -428,10 +429,9 @@ li > img {
 
 /* Контейнер карток */
 .grid {
-  display: flex;
-  flex-wrap: wrap;       
-  justify-content: center;
-  gap: 30px;             
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   padding: 0;
   list-style: none;
   margin: 0;
@@ -443,8 +443,6 @@ li > img {
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  flex: 1 1 300px;       
-  max-width: 350px;      
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -518,6 +516,71 @@ li > img {
 }
 .features-list-item:nth-child(4)::before {
   background-image: url("./img/Group 4.png");
+}
+
+/* === Тіні === */
+
+/* Кнопка Hero */
+.hero-button {
+  background: var(--main-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Картки команди */
+.team-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Особливості */
+.features-list-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.features-list-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Картки робіт */
+.work-list-item img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-list-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 
