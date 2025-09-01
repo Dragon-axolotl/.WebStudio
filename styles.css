@@ -86,7 +86,7 @@ ul {
 
 /* === Hero === */
 .hero {
-  background-image: url(./img/Img.png);
+  background-image: url(./Img.png);
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -582,6 +582,7 @@ li > img {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
 
 
 
