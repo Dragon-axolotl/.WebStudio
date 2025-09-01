@@ -70,7 +70,7 @@ ul {
 
 /* === Hero === */
 .hero {
-  background: url(./img/Img.png) center/cover no-repeat;
+  background: url(./img.png) center/cover no-repeat;
   color: var(--white);
   text-align: center;
   padding: 120px 0;
