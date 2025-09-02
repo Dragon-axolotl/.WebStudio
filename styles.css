@@ -147,7 +147,7 @@ ul {
    text-align: center; font-size: 36px; margin-bottom: 50px; line-height: 1.2; 
   }
 
-/* === Робота === */
+/* Секція "Чим ми займаємось (робота)" */
 .work {
   padding: var(--section-padding) 0;
  }
@@ -179,6 +179,25 @@ ul {
 .work-list-item img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; 
+}
+
+.work-list-item {
+  border-radius: 16px;     
+  overflow: hidden;        
+  aspect-ratio: 16 / 9;    
+}
+
+.work-list-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  display: block;
 }
 
 /* === Команда === */
@@ -409,3 +428,4 @@ ul {
 .footer-logo .logo-accent {
   color: #fff; /* колір Studio */
 }
+
