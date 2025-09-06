@@ -70,7 +70,7 @@ ul {
 
 /* === Hero === */
 .hero {
-  background: url(./img/img.png) center/cover no-repeat;
+  background: url(./img/img.jpg) center/cover no-repeat;
   color: var(--white);
   text-align: center;
   padding: 120px 0;
@@ -428,3 +428,4 @@ ul {
 .footer-logo .logo-accent {
   color: #fff; /* колір Studio */
 }
+
