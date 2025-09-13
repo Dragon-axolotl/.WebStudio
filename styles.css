@@ -37,7 +37,10 @@ ul {
   border-bottom: 1px solid #ececec; 
 }
 .header-container {
-  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -70,7 +73,14 @@ ul {
 
 /* === Hero === */
 .hero {
-  background: url(./img/img.jpg) center/cover no-repeat;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),url(./img/img.jpg);
+      background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--white);
   text-align: center;
   padding: 120px 0;
@@ -428,4 +438,25 @@ ul {
 .footer-logo .logo-accent {
   color: #fff; /* колір Studio */
 }
+
+.features {
+  background: #fff;
+  padding: var(--section-padding) 0;
+}
+
+.work {
+  background: var(--section-bg);
+  padding: var(--section-padding) 0;
+}
+
+.team {
+  background: #fff;
+  padding: var(--section-padding) 0;
+}
+
+.clients {
+  background: var(--section-bg);
+  padding: var(--section-padding) 0;
+}
+
 
