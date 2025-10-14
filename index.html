@@ -32,10 +32,51 @@
         </ul>
       </nav>
       <ul class="contact-list">
-        <li><img src="./img/convert.svg" alt="convert"><a href="mailto:info@devstudio.com" class="blue">info@devstudio.com</a></li>
-        <li><img src="./img/smartphone.svg" alt="phone"><a href="tel:+380961111111" class="grey">+38 096 111 11 11</a></li>
+        <li>
+          <img src="./img/convert.svg" alt="convert">
+          <a href="#modal" class="blue">info@devstudio.com</a>
+        </li>
+        <li>
+          <img src="./img/smartphone.svg" alt="phone">
+          <a href="tel:+380961111111" class="grey">+38 096 111 11 11</a>
+        </li>
       </ul>
-    </div>
+
+<!-- Модальне вікно -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>Залиште свої дані, ми вам передзвонимо</h2>
+
+    <form>
+      <div class="input-wrapper">
+        <img src="./img/profile.svg" alt="user" class="input-icon">
+        <input type="text" placeholder="Ім’я" required>
+      </div>
+
+      <div class="input-wrapper">
+        <img src="./img/phone.svg" alt="phone" class="input-icon">
+        <input type="tel" placeholder="Телефон" required>
+      </div>
+
+      <div class="input-wrapper">
+        <img src="./img/mail.svg" alt="mail" class="input-icon">
+        <input type="email" placeholder="Пошта">
+      </div>
+
+      <div class="input-wrapper">
+        <textarea placeholder="Коментар"></textarea>
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        <span>Погоджуюся з розсилкою та приймаю <a href="#">умови договору</a></span>
+      </label>
+
+      <button type="submit" class="submit-btn">Відправити</button>
+    </form>
+  </div>
+</div>
   </header>
 
   <!-- Hero -->
