@@ -746,12 +746,12 @@ ul {
 
 /* Ефект при наведенні */
 .social-icons a:hover {
-  background-color: #2196f3; 
-  transform: scale(1.1); 
+  background-color: #2196f3; /* синій фон */
+  transform: scale(1.1); /* легке збільшення */
 }
 
 .social-icons a:hover .icon {
-  fill: #fff; 
+  fill: #fff; /* біла іконка */
 }
 
 .social-icons {
@@ -765,7 +765,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;              
+  width: 45px;              /* більший кружечок */
   height: 45px;
   border-radius: 50%;
   background-color: #f0f0f0;
@@ -773,7 +773,7 @@ ul {
 }
 
 .icon {
-  width: 24px;              
+  width: 24px;              /* більша іконка */
   height: 24px;
   fill: #555;
   transition: fill 0.3s ease;
@@ -781,10 +781,10 @@ ul {
 
 /* Ефект при наведенні */
 .social-icons a:hover {
-  background-color: #2196f3; 
+  background-color: #2196f3; /* синій фон */
   transform: scale(1.1);
 }
 
 .social-icons a:hover .icon {
-  fill: #fff; 
+  fill: #fff; /* біла іконка */
 }
