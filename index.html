@@ -17,6 +17,7 @@
 
   <!-- Основний файл стилів -->
   <link href="./styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/style.css">
 </head>
 <body>
 
@@ -33,11 +34,15 @@
       </nav>
       <ul class="contact-list">
         <li>
-          <img src="./img/convert.svg" alt="convert">
-          <a href="#modal" class="blue">info@devstudio.com</a>
+          <svg class="icon">
+            <use xlink:href="./symbol-defs.svg#icon-convert"></use>
+          </svg>
+          <a href="#modal" class="grey">info@devstudio.com</a>
         </li>
         <li>
-          <img src="./img/smartphone.svg" alt="phone">
+          <svg class="icon">
+            <use xlink:href="./symbol-defs.svg#icon-phone"></use>
+          </svg>
           <a href="tel:+380961111111" class="grey">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -50,28 +55,29 @@
 
     <form>
       <div class="input-wrapper">
-        <img src="./img/profile.svg" alt="user" class="input-icon">
+        <svg class="input-icon icon">
+            <use xlink:href="./symbol-defs.svg#icon-profile"></use>
+          </svg>
         <input type="text" placeholder="Ім’я" required>
       </div>
 
       <div class="input-wrapper">
-        <img src="./img/phone.svg" alt="phone" class="input-icon">
+        <svg class="input-icon icon">
+            <use xlink:href="./symbol-defs.svg#icon-smartphone"></use>
+          </svg>
         <input type="tel" placeholder="Телефон" required>
       </div>
 
       <div class="input-wrapper">
-        <img src="./img/mail.svg" alt="mail" class="input-icon">
+        <svg class="input-icon icon">
+            <use xlink:href="./symbol-defs.svg#icon-mail"></use>
+          </svg>
         <input type="email" placeholder="Пошта">
       </div>
 
       <div class="input-wrapper">
         <textarea placeholder="Коментар"></textarea>
       </div>
-
-      <label class="checkbox">
-        <input type="checkbox" required>
-        <span>Погоджуюся з розсилкою та приймаю <a href="#">умови договору</a></span>
-      </label>
 
       <button type="submit" class="submit-btn">Відправити</button>
     </form>
@@ -143,10 +149,26 @@
           <h3 class="team-item-name">Ігор Дем'яненко</h3>
           <p class="team-item-role">Product Designer</p>
           <div class="social-icons">
-  <a href="https://www.instagram.com/"><img src="./img/instagram_white.svg" alt="Instagram"></a>
-  <a href="https://x.com/"><img src="./img/twitter_white.svg" alt="Twitter"></a>
-  <a href="https://www.facebook.com/"><img src="./img/facebook_white.svg" alt="Facebook"></a>
-  <a href="https://ua.linkedin.com/"><img src="./img/linkedin_white.svg" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-instagram_white"></use>
+    </svg>
+  </a>
+  <a href="https://twitter.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-twitter_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-facebook_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-linkedin_white"></use>
+    </svg>
+  </a>
 </div>
         </li>
         <li class="team-item">
@@ -154,10 +176,26 @@
           <h3 class="team-item-name">Ольга Рєпіна</h3>
           <p class="team-item-role">Frontend Developer</p>
           <div class="social-icons">
-  <a href="https://www.instagram.com/"><img src="./img/instagram_white.svg" alt="Instagram"></a>
-  <a href="https://x.com/"><img src="./img/twitter_white.svg" alt="Twitter"></a>
-  <a href="https://www.facebook.com/"><img src="./img/facebook_white.svg" alt="Facebook"></a>
-  <a href="https://ua.linkedin.com/"><img src="./img/linkedin_white.svg" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-instagram_white"></use>
+    </svg>
+  </a>
+  <a href="https://twitter.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-twitter_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-facebook_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-linkedin_white"></use>
+    </svg>
+  </a>
 </div>
         </li>
         <li class="team-item">
@@ -165,10 +203,26 @@
           <h3 class="team-item-name">Микола Тарасов</h3>
           <p class="team-item-role">Marketing</p>
           <div class="social-icons">
-  <a href="https://www.instagram.com/"><img src="./img/instagram_white.svg" alt="Instagram"></a>
-  <a href="https://x.com/"><img src="./img/twitter_white.svg" alt="Twitter"></a>
-  <a href="https://www.facebook.com/"><img src="./img/facebook_white.svg" alt="Facebook"></a>
-  <a href="https://ua.linkedin.com/"><img src="./img/linkedin_white.svg" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-instagram_white"></use>
+    </svg>
+  </a>
+  <a href="https://twitter.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-twitter_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-facebook_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-linkedin_white"></use>
+    </svg>
+  </a>
 </div>
         </li>
         <li class="team-item">
@@ -176,10 +230,26 @@
           <h3 class="team-item-name">Михайло Єрмаков</h3>
           <p class="team-item-role">UI Designer</p>
           <div class="social-icons">
-  <a href="https://www.instagram.com/"><img src="./img/instagram_white.svg" alt="Instagram"></a>
-  <a href="https://x.com/"><img src="./img/twitter_white.svg" alt="Twitter"></a>
-  <a href="https://www.facebook.com/"><img src="./img/facebook_white.svg" alt="Facebook"></a>
-  <a href="https://ua.linkedin.com/"><img src="./img/linkedin_white.svg" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-instagram_white"></use>
+    </svg>
+  </a>
+  <a href="https://twitter.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-twitter_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-facebook_white"></use>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/">
+    <svg class="icon">
+      <use xlink:href="./symbol-defs.svg#icon-linkedin_white"></use>
+    </svg>
+  </a>
 </div>
         </li>
       </ul>
