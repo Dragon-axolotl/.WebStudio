@@ -334,42 +334,9 @@ ul {
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   margin-top: 10px;
-  position: relative;
-  z-index: 2;
 }
-
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-icons img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  transition: filter 0.3s ease;
-}
-
-.social-icons a:hover {
-  background-color: #2196f3;
-  transform: scale(1.1);
-}
-
-.social-icons a:hover img {
-  filter: brightness(0) invert(1);
-}
-
 
 .team-item img {
   width: 100%;
@@ -437,8 +404,6 @@ ul {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fff;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 .filters button.active, .filters button:hover {
@@ -732,10 +697,10 @@ ul {
 .checkbox {
   display: flex;
   align-items: center;
-  gap: 8px; /* відстань між чекбоксом і текстом */
+  gap: 8px; 
   font-size: 14px;
   color: #757575;
-  margin-bottom: 20px; /* трохи відступу перед кнопкою */
+  margin-bottom: 20px; 
 }
 
 .checkbox input[type="checkbox"] {
@@ -754,8 +719,72 @@ ul {
   text-decoration: underline;
 }
 
-.clients {
-  background: var(--section-bg);
-  padding: var(--section-padding) 0;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
 
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  transition: fill 0.3s ease;
+}
+
+/* Ефект при наведенні */
+.social-icons a:hover {
+  background-color: #2196f3; 
+  transform: scale(1.1); 
+}
+
+.social-icons a:hover .icon {
+  fill: #fff; 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;              
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.icon {
+  width: 24px;              
+  height: 24px;
+  fill: #555;
+  transition: fill 0.3s ease;
+}
+
+/* Ефект при наведенні */
+.social-icons a:hover {
+  background-color: #2196f3; 
+  transform: scale(1.1);
+}
+
+.social-icons a:hover .icon {
+  fill: #fff; 
 }
