@@ -575,6 +575,10 @@ ul {
   z-index: 100;
 }
 
+.modal-button {
+  color: var(--white);
+}
+
 .modal:target {
   display: flex;
 }
@@ -729,11 +733,6 @@ ul {
 .checkbox a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
 
 .social-icons {
   display: flex;
