@@ -161,6 +161,7 @@ ul {
    text-align: center; font-size: 36px; margin-bottom: 50px; line-height: 1.2; 
   }
 
+/* Секція "Чим ми займаємось (робота)" */
 /* ==== Секція Чим ми займаємось ==== */
 
 .work {
@@ -618,7 +619,6 @@ ul {
   color: var(--main-color);
 }
 
-
 /* === Іконки в інпутах === */
 .input-wrapper {
   position: relative;
@@ -637,7 +637,7 @@ ul {
 .input-wrapper input,
 .input-wrapper textarea {
   width: 100%;
-  padding: 10px 10px 10px 36px; /* відступ під іконку */
+  padding: 10px 10px 10px 36px; 
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
@@ -687,11 +687,6 @@ ul {
   text-decoration: underline;
 }
 
-
-
-
-
-
 .social-icons {
   display: flex;
   justify-content: center;
@@ -717,14 +712,13 @@ ul {
   transition: fill 0.3s ease;
 }
 
-/* Ефект при наведенні */
 .social-icons a:hover {
-  background-color: #2196f3; /* синій фон */
-  transform: scale(1.1); /* легке збільшення */
+  background-color: #2196f3; 
+  transform: scale(1.1);
 }
 
 .social-icons a:hover .icon {
-  fill: #fff; /* біла іконка */
+  fill: #fff; 
 }
 
 .social-icons {
@@ -738,7 +732,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;              /* більший кружечок */
+  width: 45px;             
   height: 45px;
   border-radius: 50%;
   background-color: #f0f0f0;
@@ -746,7 +740,7 @@ ul {
 }
 
 .icon {
-  width: 24px;              /* більша іконка */
+  width: 24px;             
   height: 24px;
   fill: #555;
   transition: fill 0.3s ease;
