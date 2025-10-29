@@ -69,11 +69,11 @@ ul {
   color: var(--light-gray);
   line-height: 1.5;
 }
-.blue {
-  color: var(--main-color);
-}
 .grey {
   color: var(--light-gray);
+}
+.grey:hover {
+  color: var(--main-color);
 }
 /* === Hero === */
 .hero {
@@ -161,7 +161,6 @@ ul {
    text-align: center; font-size: 36px; margin-bottom: 50px; line-height: 1.2; 
   }
 
-/* Секція "Чим ми займаємось (робота)" */
 /* ==== Секція Чим ми займаємось ==== */
 
 .work {
@@ -248,19 +247,19 @@ ul {
   text-decoration: none;
 }
 
-.social-icons img {
-  width: 20px;
-  height: 20px;
+.social-icons svg {
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   transition: filter 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons use:hover {
   background-color: #2196f3;
   transform: scale(1.1);
 }
 
-.social-icons a:hover img {
+.social-icons a:hover svg {
   filter: brightness(0) invert(1);
 }
 .team {
@@ -305,58 +304,6 @@ ul {
    line-height: 1.5;
 }
 
-
-
-
-
-.team-item {
-  position: relative;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px rgba(0,0,0,0.2),
-              0 1px 3px rgba(0,0,0,0.1),
-              0 1px 1px rgba(0,0,0,0.12);
-  text-align: center;
-  padding-bottom: 30px;
-  overflow: hidden;
-}
-
-.team-item img {
-  width: 100%;
-  display: block;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.team-item-name {
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.team-item-role {
-  color: #757575;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-/* Social icons styling */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.team-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  object-fit: cover;
-}
 /* === Картки === */
 .grid {
   display: grid;
@@ -436,16 +383,22 @@ ul {
   gap: 30px;
   margin-top: 40px;
 }
+.clients-item {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
 .clients-item img {
   width: 120px;
   height: auto;
   opacity: 0.7;
-  transition: opacity 0.3s;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
 }
-.clients-item img:hover {
+.clients-item:hover img {
+  filter: grayscale(0);
   opacity: 1;
 }
-
 /* === Футер === */
 .footer {
   background: #2e2f42;
@@ -733,6 +686,11 @@ ul {
 .checkbox a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
 
 .social-icons {
   display: flex;
