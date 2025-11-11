@@ -764,3 +764,24 @@ label {
   cursor: pointer;
   font-size: medium;
 }
+
+.form-input {
+  background-color: #2e2f42;
+  border: 1px solid #FFFFFF;
+  width: 358px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.form-button {
+  background-color: var(--main-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+
+.email-input {
+  display: block;
+}
+
