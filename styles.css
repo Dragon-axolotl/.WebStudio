@@ -755,3 +755,12 @@ ul {
 .social-icons a:hover .icon {
   fill: #fff; /* біла іконка */
 }
+
+/* FORM */
+label {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: medium;
+}
