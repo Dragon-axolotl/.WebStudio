@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | WebStudio</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+<!-- Підключення normalize.css через CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <!-- Підключення reset.css -->
+  <link rel="stylesheet" href="css/reset.css" />
+
+  <!-- Підключення Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Основний файл стилів -->
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">Студія</a></li>
+          <li><a href="./portfolio.html">Портфоліо</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contact-list">
+        <li>
+          <svg class="icon"><use xlink:href="./symbol-defs.svg#icon-convert"></use></svg>
+          <a href="mailto:info@devstudio.com" class="grey">info@devstudio.com</a>
+        </li>
+        <li>
+          <svg class="icon"><use xlink:href="./symbol-defs.svg#icon-phone"></use></svg>
+          <a href="tel:+380961111111" class="grey">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <!-- Інфо -->
+      <div class="footer-info">
+        <a href="#" class="footer-logo">Web<span class="logo-accent">Studio</span></a>
+
+        <address class="footer-address">
+          м. Київ, пр-т Лесі Українки, 26
+          <div class="footer-contact">
+            <a href="mailto:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+          </div>
+        </address>
+      </div>
+
+      <!-- Соціальні мережі -->
+      <div class="footer-social">
+        <h3 class="footer-title">Приєднуйтесь</h3>
+        <ul class="social-list">
+          <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/linkedin.png" alt=""></a></li>
+        </ul>
+      </div>
+
+      <!-- Підписка -->
+      <div class="footer-email">
+        <h3 class="footer-title">Підпишіться на розсилку</h3>
+        <form class="footer-form">
+          <input type="email" placeholder="E-mail" required>
+          <button type="submit">Підписатися</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
