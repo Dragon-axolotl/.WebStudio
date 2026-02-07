@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти | WebStudio</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Підключення normalize.css через CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Підключення reset.css -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- Підключення Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Основний файл стилів -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+     <!-- Header -->
+    <header class="header page-header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo">
+          Web<span class="header__logo-accent">Studio</span>
+        </a>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav__list menu">
+            <li class="nav__item">
+              <a href="./index.html" class="link nav__link"
+                >Студія</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contacts.html" class="link nav__link nav__link--active">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <svg class="contacts__icon">
+              <use xlink:href="./symbol-defs.svg#icon-convert"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <svg class="contacts__icon">
+              <use xlink:href="./symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+380961111111" class="contacts__link">
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <!-- Info -->
+        <div class="footer__info">
+          <a href="#" class="footer__logo">
+            Web<span class="footer__logo-accent">Studio</span>
+          </a>
+
+          <address class="footer__address">
+            м. Київ, пр-т Лесі Українки, 26
+
+            <ul class="footer__contacts">
+              <li class="footer__contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contact-link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="tel:+380961111111" class="footer__contact-link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Social -->
+        <div class="footer__social">
+          <h3 class="footer__title">ПРИЄДНУЙТЕСЬ</h3>
+
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./img/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./img/twitter.png" alt="Twitter" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./img/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./img/linkedin.png" alt="LinkedIn" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer__subscribe">
+          <h3 class="footer__title">ПІДПИШІДСЯ НА РОЗСИЛКУ</h3>
+
+          <form class="footer__form">
+            <input
+              type="email"
+              class="footer__input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="footer__button">
+              Підписатися
+              <img
+                src="./img/telegram.png"
+                alt="Telegram"
+                class="footer__button-icon"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+     <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav__list mobile-menu">
+          <li class="nav__item">
+            <a href="./index.html" class="link nav__link nav__link--active"
+              >Студія</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contacts.html" class="link nav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
+
+    <script>
+      const modal = document.getElementById("callback-modal");
+      const openBtns = document.querySelectorAll(".modal__button");
+      const closeBtn = modal.querySelector(".modal__close");
+
+      openBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.style.display = "flex";
+        });
+      });
+
+      closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
