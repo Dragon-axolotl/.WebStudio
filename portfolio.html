@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Портфоліо | WebStudio</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Підключення normalize.css через CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <!-- Підключення reset.css -->
+  <link rel="stylesheet" href="css/reset.css" />
+
+  <!-- Підключення Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Основний файл стилів -->
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">Студія</a></li>
+          <li><a href="./portfolio.html" class="active">Портфоліо</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contact-list">
+        <li>
+          <svg class="icon"><use xlink:href="./symbol-defs.svg#icon-convert"></use></svg>
+          <a href="mailto:info@devstudio.com" class="grey">info@devstudio.com</a>
+        </li>
+        <li>
+          <svg class="icon"><use xlink:href="./symbol-defs.svg#icon-phone"></use></svg>
+          <a href="tel:+380961111111" class="grey">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="portfolio">
+      <div class="container">
+        <ul class="filters">
+          <li><button class="active">Усі</button></li>
+          <li><button>Веб-сайти</button></li>
+          <li><button>Додатки</button></li>
+          <li><button>Дизайн</button></li>
+          <li><button>Маркетинг</button></li>
+        </ul>
+
+        <ul class="grid">
+          <li class="card hover">
+  <div class="img-wrapper">
+    <img src="./img/technocrack.jpg" alt="Технокряк" />
+    <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+  <div class="info">
+    <h3>Технокряк</h3>
+    <p>Веб-сайт</p>
+  </div>
+</li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/poster-new-orlean.jpg" alt="Постер New Orlean" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Постер New Orlean vs Golden Star</h3>
+              <p>Дизайн</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/restaurant-seafood.jpg" alt="Ресторан Seafood" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Ресторан Seafood</h3>
+              <p>Додаток</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/project-prime.jpg" alt="Проєкт Prime" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Проєкт Prime</h3>
+              <p>Маркетинг</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/project-boxes.jpg" alt="Проєкт Boxes" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Проєкт Boxes</h3>
+              <p>Додаток</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/inspiration-has-no-borders.jpg" alt="Inspiration has no Borders" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Inspiration has no Borders</h3>
+              <p>Веб-сайт</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/limited-edition.jpg" alt="Видання Limited Edition" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Видання Limited Edition</h3>
+              <p>Дизайн</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/project-lab.jpg" alt="Проєкт LAB" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Проєкт LAB</h3>
+              <p>Маркетинг</p>
+            </div>
+          </li>
+          <li class="card hover">
+  <div class="img-wrapper">
+            <img src="./img/growing-business.jpg" alt="Growing Business" />
+            <div class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+  </div>
+            <div class="info">
+              <h3>Growing Business</h3>
+              <p>Дизайн</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <!-- Інфо -->
+      <div class="footer-info">
+        <a href="#" class="footer-logo">Web<span class="logo-accent">Studio</span></a>
+
+        <address class="footer-address">
+          м. Київ, пр-т Лесі Українки, 26
+          <div class="footer-contact">
+            <a href="mailto:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+          </div>
+        </address>
+      </div>
+
+      <!-- Соціальні мережі -->
+      <div class="footer-social">
+        <h3 class="footer-title">Приєднуйтесь</h3>
+        <ul class="social-list">
+          <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="./img/linkedin.png" alt=""></a></li>
+        </ul>
+      </div>
+
+      <!-- Підписка -->
+      <div class="footer-email">
+        <h3 class="footer-title">Підпишіться на розсилку</h3>
+        <form class="footer-form">
+          <input type="email" placeholder="E-mail" required>
+          <button type="submit">Підписатися
+            <img src="./img/telegram.png" alt="telegram">
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+
+      <a href="#" class="close">&times;</a>
+
+      <h2>Залиште свої дані, ми вам передзвонимо</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label for="name">Ім’я</label>
+          <div class="input-wrapper">
+            <svg class="input-icon icon"><use xlink:href="./symbol-defs.svg#icon-profile"></use></svg>
+            <input id="name" type="text" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <div class="input-wrapper">
+            <svg class="input-icon icon"><use xlink:href="./symbol-defs.svg#icon-smartphone"></use></svg>
+            <input id="phone" type="tel" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mail">Пошта</label>
+          <div class="input-wrapper">
+            <svg class="input-icon icon"><use xlink:href="./symbol-defs.svg#icon-mail"></use></svg>
+            <input id="mail" type="email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Коментар</label>
+          <div class="input-wrapper">
+            <textarea id="comment"></textarea>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" id="agreement">
+          Погоджуюсь з розсилкою і приймаю <a href="#">Умови договору</a>
+        </label>
+
+        <button class="subscribe-btn">
+          Підписатися
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
